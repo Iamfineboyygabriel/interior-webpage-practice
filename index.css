@@ -138,4 +138,151 @@ nav ul li a:hover{
     color:black;
     animation: pulse 0.9s infinite;
 }
+@media screen and (max-width: 828px) {
+    
+    
+body{
+    animation: fadeIn 2s ease-in-out;
+    visibility: visible;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+}
+.header img{
+    width: 100px;
+    height: 90px;
+    border-radius: 90px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    padding: 5px 5px;
+    top: 0;
+    left: 0m;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 3em;
+}
+.bar{
+    margin-right:1em;
+}
+ nav ul li{
+    display:inline;
+    margin-right:2px;
+    padding-right:5px ;
+    list-style: none;
+} 
+nav ul li a{
+text-decoration: none;
+color: white;
+font-size: 11px;
+font-family: arial;
+transition: 0.2s;
+}
+nav ul li a:hover{
+    color: black;
+}
+.container{
+    margin-top: 10em;
+    text-align: center;
+}
+.container h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    animation: scatterAnimation 3s ease-in-out; 
+}
+/* Apply some default styles to the scattered-text container */
+.container {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  /* Define the keyframes animation */
+  @keyframes scatterAnimation {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(calc(-50% + 20px), calc(-50% + 20px));
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+.container p{
+    font-size: 20px;
+    margin-top: 3px;
+    color: white;
+}
+.back-video{
+    position:absolute;
+    right: 0;
+    left: 0;
+    bottom:0;
+    z-index: -1;
+    width: fit-content;
+    height: fit-content;
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap:19px;
+    margin-top: 30px;
+    }
+    @keyframes pulse{
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+      .ex-btn{
+    background-color:brown ;
+    color: 0.2s;
+    border-width: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: arial;
+    font-size: 18px;
+    transition:background-color 0.3sec;
+    border-radius: 10px;
+    }
+    .ex-btn:hover{
+        background-color: white;
+        color:black;
+        animation: pulse 0.9s infinite;
+    } 
+.book-btn{
+    background-color:brown ;
+    border-width: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: arial;
+    font-size: 18px;
+    transition:background-color 0.3sec;
+    border-radius: 10px;
+}
+.book-btn:hover{
+    background-color: white;
+    color:black;
+    animation: pulse 0.9s infinite;
+}
+    
+    
+ }
     
